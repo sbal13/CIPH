@@ -1731,6 +1731,13 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
+csvtojson@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/csvtojson/-/csvtojson-1.1.7.tgz#17ded07aec0d8c01f2d6f6871cfa36ab88b149b1"
+  dependencies:
+    lodash "^4.17.3"
+    strip-bom "1.0.0"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -2574,6 +2581,10 @@ find-up@^2.0.0, find-up@^2.1.0:
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
   dependencies:
     locate-path "^2.0.0"
+
+first-chunk-stream@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
 
 flat-cache@^1.2.1:
   version "1.2.2"
@@ -4460,6 +4471,10 @@ pako@~0.2.0:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/pako/-/pako-0.2.9.tgz#f3f7522f4ef782348da8161bad9ecfd51bf83a75"
 
+papaparse@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-4.3.5.tgz#b6cdf5cae6fe9ec603b1be66f114a63ac645a036"
+
 param-case@2.1.x:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/param-case/-/param-case-2.1.1.tgz#df94fd8cf6531ecf75e6bef9a0858fbc72be2247"
@@ -4955,7 +4970,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4:
+prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -5100,6 +5115,13 @@ react-error-overlay@^2.0.0:
     react-dom "^15 || ^16"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-file-reader@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-file-reader/-/react-file-reader-1.1.1.tgz#bcde603d1db841e5ac70677598a3382bd310f82b"
+  dependencies:
+    prop-types "^15.5.0"
+    uuid4 "^1.0.0"
 
 react-router-dom@^4.2.2:
   version "4.2.2"
@@ -5843,6 +5865,13 @@ strip-ansi@^4.0.0:
   dependencies:
     ansi-regex "^3.0.0"
 
+strip-bom@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-1.0.0.tgz#85b8862f3844b5a6d5ec8467a93598173a36f794"
+  dependencies:
+    first-chunk-stream "^1.0.0"
+    is-utf8 "^0.2.0"
+
 strip-bom@3.0.0, strip-bom@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
@@ -6225,6 +6254,10 @@ utila@~0.4:
 utils-merge@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.0.tgz#0294fb922bb9375153541c4f7096231f287c8af8"
+
+uuid4@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/uuid4/-/uuid4-1.0.0.tgz#813aaeaf11ea2f68909c5ad57d894f83202d6720"
 
 uuid@^2.0.1, uuid@^2.0.2:
   version "2.0.3"
