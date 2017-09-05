@@ -14,7 +14,8 @@ class BarSegment extends React.Component {
 
 	return (
 			<div 
-			style={{backgroundColor: "blue", 
+			style={{backgroundColor: this.props.color,
+					color: "white", 
 					display: "inline-block", 
 					width: this.props.percent + "%"}}
 			onMouseOver={this.handleHover}

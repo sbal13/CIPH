@@ -33,6 +33,7 @@ class BarContainer extends React.Component {
 
 		const BarDispays = signs.map( (sign,index) => <BarSegment 
 			sign={sign} 
+			color={index%2===0 ? "blue" : "red"}
 			percent={index === 0 ? parseInt(sign.distance, 10) : (sign.distance - signs[index-1].distance)/streetLength*100}
 			displayDetails={this.displayDetails}
 			hideDetails={this.hideDetails}
