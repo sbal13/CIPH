@@ -25,9 +25,9 @@ class Filter extends React.Component{
 
 	render(){
 
-		console.log("All Results: ",this.props.filteredResults)
+		// console.log("All Results: ",this.props.filteredResults)
 		console.log("Temporary: ",this.props.temporaryResults)
-		console.log(this.props)
+		// console.log(this.props)
 
 		const mainStreetInput = (<input type="text"  disabled={this.props.mainFilter} value={this.props.mainFilterTemp} onChange={this.handleMainChange} placeholder="Enter primary street..."/>)
 		const fromInput = (<input type="text" disabled={this.props.fromFilter} value={this.props.fromFilterTemp} onChange={this.handleFromChange} placeholder="Enter from street..."/>)

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Papa from 'papaparse'
 import Filter from './components/Filter'
+import BarContainer from './components/BarContainer'
 
 
 
@@ -125,12 +126,15 @@ class App extends Component {
 
 
   render() {
+
+    const barContainer = <BarContainer results={this.state.filteredResults} signs={this.state.signs}/>
+    const displayBar = (this.state.mainFilter && this.state.fromFilter && this.state.toFilter)
+
     return (
       <div>
         <button onClick={this.getLocations}>Import Locations</button>
         <button onClick={this.getSigns}>Import Signs</button>
         <Filter 
-        
         temporaryResults={this.state.temporaryResults} 
         filteredResults={this.state.filteredResults} 
 
@@ -150,10 +154,8 @@ class App extends Component {
         mainFilterTemp={this.state.mainFilterTemp} 
         fromFilterTemp={this.state.fromFilterTemp}
         toFilterTemp={this.state.toFilterTemp}
-
-        
-
         />
+        {(displayBar && (this.state.filteredResults.length === 1 || this.state.filteredResults.length === 2)) ? barContainer : null}
     </div>
     );
   }
